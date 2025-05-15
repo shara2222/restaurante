@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platos del Restaurante</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <h1>Lista de Platos Especiales</h1>
+
+  <form id="dish-form">
+    <input type="text" id="dish-name" placeholder="Nombre del plato" required>
+    <input type="text" id="dish-origin" placeholder="Origen del plato" required>
+    <button type="submit">Agregar plato</button>
+  </form>
+
+  <ul id="dish-list"></ul>
+
+  <h2>Platos del Mundo (desde API)</h2>
+  <div id="search-container">
+  <input type="text" id="search-input" placeholder="Buscar plato por nombre...">
+  <button id="search-button">Buscar</button>
+</div>
+
+</div>
+
+  <div id="api-dishes" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
